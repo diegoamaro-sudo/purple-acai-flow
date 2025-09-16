@@ -2,6 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import Dashboard from "@/components/Dashboard";
 import Fornecedores from "@/components/Fornecedores";
+import Produtos from "@/components/Produtos";
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -15,7 +16,7 @@ const Index = () => {
       case 'despesas':
         return <div className="p-8 text-center text-muted-foreground">Aba Despesas - Em desenvolvimento</div>;
       case 'produtos':
-        return <div className="p-8 text-center text-muted-foreground">Aba Produtos - Em desenvolvimento</div>;
+        return <Produtos />;
       case 'fornecedores':
         return <Fornecedores />;
       case 'fechar-caixa':
